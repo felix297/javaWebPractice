@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form practice</title>
+</head>
+
+<body>
+<h1>Registration</h1>
+<form action="index.html" method="post">
+    <p>
+        <label for="username">username: </label>
+        <input type="text" name="username" id="username" placeholder="please input your username" required pattern="/^[A-Za-z0-9]+([-._][A-Za-z0-9]+)*$/"/>
+    </p>
+    <p>
+        <label for="password">password: </label>
+        <input type="password" id="password" name="password" placeholder="please input your password" required/>
+    </p>
+    <p>
+        gender:
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">female</label>
+    </p>
+    <p>
+        hobby:
+        <input type="checkbox" id="java" name="hobby" value="java">
+        <label for="java">java</label>
+        <input type="checkbox" id="c" name="hobby" value="c">
+        <label for="c">c</label>
+        <input type="checkbox" id="mysql" name="hobby" value="mysql">
+        <label for="mysql">mysql</label>
+        <input type="checkbox" id="linux" name="hobby" value="linux">
+        <label for="linux">linux</label>
+    </p>
+    <p>
+        <label for="email">email address</label>
+        <input type="email" id="email" name="email" placeholder="please input your email address" pattern="/^[A-Za-z0-9]+([-._][A-Za-z0-9]+)*@[A-Za-z0-9]+(-[A-Za-z0-9]+)*(\.[A-Za-z]{2,6}|[A-Za-z]{2,4}\.[A-Za-z]{2,3})$/"/>
+    </p>
+    <p>
+        number of family: <input type="number" name="numberOfFamily" max="10" min="1" step="1"/>
+    </p>
+    <p>
+        <input type="button" name="file" value="choose the file to upload...">
+    </p>
+    <p>nationality:
+        <select name="nationality">
+            <option value="no">please select your nationality</option>
+            <option value="China">China</option>
+            <option value="USA">United States of American</option>
+            <option value="Japan">Japan</option>
+            <option value="Korean">Korean</option>
+        </select>
+    </p>
+    <p>
+        <label for="profile">introduce yourself</label><br/>
+        <textarea name="profile" id="profile" cols="40" rows="5" placeholder="introduce yourself"></textarea>
+    </p>
+    <p>
+        <input type="file" file="upload your file"/>
+<!--        <input type="image" src="resources/icon.png" width="30px" name="switch">-->
+    </p>
+    <p>
+        <input type="range" name="audioVolume" max="100" min="0" step="1" value="100"/>
+    </p>
+    <p>
+        <label for="search">search: </label>
+        <input type="search" name="gsearch" id="search" placeholder="input the term you want to search"/>
+    </p>
+    <p>
+        <input type="submit"> <input type="reset"/>
+    </p>
+</form>
+</body>
+</html>
