@@ -1,0 +1,17 @@
+a {
+    background: rgb(222, 86, 74) no-repeat;
+    height: 30px;
+    width: 80px;
+    border-style: inset;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: arial, sans-serif;
+    margin: auto;
+}
+
+a:hover {
+    background: rgb(255, 86, 74) no-repeat;
+}
