@@ -1,0 +1,35 @@
+.textarea1,.textarea2,.textarea3,.textarea4,.textarea5,.textarea6 {
+    border: solid black 1px;
+    width: 200px;
+    height: 50px;
+    /*margin: 0 auto 70px;*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+.textarea1 {
+    overflow: visible;
+}
+
+.textarea2 {
+    overflow: hidden;
+}
+
+.textarea3 {
+    overflow: scroll;
+}
+
+.textarea4 {
+    overflow: auto;
+}
+
+.textarea5 {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.textarea6 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
