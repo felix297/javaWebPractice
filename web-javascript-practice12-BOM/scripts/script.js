@@ -35,12 +35,21 @@
 // window.alert(window.navigator.onLine);
 // window.alert(window.navigator.javaEnabled());
 
-window.alert("Hello!\nWelcome to my site!");
-if (window.confirm("if you want to go to www.baidu.com")) {
-    window.location.assign("https:\\www.baidu.com");
-}
+// window.alert("Hello!\nWelcome to my site!");
+// if (window.confirm("if you want to go to www.baidu.com")) {
+//     window.location.assign("https:\\www.baidu.com");
+// }
+//
+// let name = window.prompt("please input your name", "traveler");
+// if (name != null) {
+//     window.alert("Hello! " + name + "!");
+// }
 
-let name = window.prompt("please input your name", "traveler");
-if (name != null) {
-    window.alert("Hello! " + name + "!");
-}
+// let count = 0;
+// function counter () {
+//     window.console.log(count);
+//     return count++;
+// }
+// let timeout = setTimeout(counter, 100);
+// let timeInterval = setInterval(counter, 1000);
+// 在终端进行 clearInterval() 操作
