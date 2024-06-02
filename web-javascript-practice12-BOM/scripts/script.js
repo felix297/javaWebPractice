@@ -20,7 +20,7 @@
 // window.console.log("path: " + window.location.pathname);
 // window.console.log("protocol: " + window.location.protocol);
 // window.location.assign("https://www.baidu.com");
-//
+
 // window.history.back()
 // window.history.forward();
 
@@ -32,5 +32,15 @@
 // window.alert(window.navigator.userAgent);
 // window.alert(window.navigator.platform);
 // window.alert(window.navigator.language);
-window.alert(window.navigator.onLine);
+// window.alert(window.navigator.onLine);
 // window.alert(window.navigator.javaEnabled());
+
+window.alert("Hello!\nWelcome to my site!");
+if (window.confirm("if you want to go to www.baidu.com")) {
+    window.location.assign("https:\\www.baidu.com");
+}
+
+let name = window.prompt("please input your name", "traveler");
+if (name != null) {
+    window.alert("Hello! " + name + "!");
+}
