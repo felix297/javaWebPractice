@@ -53,3 +53,25 @@
 // let timeout = setTimeout(counter, 100);
 // let timeInterval = setInterval(counter, 1000);
 // 在终端进行 clearInterval() 操作
+
+// document.cookie = "first name=felix; expires=Sun, 31 Dec 2017 12:00:00 UTC; path=/";
+// document.cookie = "first name = felix; last name = zeng" // 不会添加两个键值对到 document.cookie 里面，只会添加第一个键值对就去，如果想要添加两个键值对到 document.cookie 里面，就要分两次。
+// document.cookie = "last name = zeng";
+// document.cookie = "last name = xu";
+// document.cookie = "time = now; expires = expires=Thu, 01 Jan 1970 00:00:00 UTC"
+// alert(document.cookie);
+let username = window.prompt("please input the username: ");
+
+function setCookie (username) {
+    let res_username = "username=" + username + "; ";
+    let timeNow = new Date();
+    let expireDays = 7;
+    timeNow.setTime(timeNow.getTime() + expireDays*24*60*60*1000);
+    let res_expires = "expires=" + timeNow.toUTCString() + "; ";
+    let res_path = "path=/"
+    document.cookie = res_username + res_expires + res_path;
+}
+
+setCookie(username);
+
+alert(document.cookie);
