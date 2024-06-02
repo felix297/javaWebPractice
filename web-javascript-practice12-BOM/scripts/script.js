@@ -23,3 +23,14 @@
 //
 // window.history.back()
 // window.history.forward();
+
+// window.alert(window.navigator.cookieEnabled);
+// window.alert(window.navigator.appName);
+// window.alert(window.navigator.appCodeName);
+// window.alert(window.navigator.product);
+// window.alert(window.navigator.appVersion);
+// window.alert(window.navigator.userAgent);
+// window.alert(window.navigator.platform);
+// window.alert(window.navigator.language);
+window.alert(window.navigator.onLine);
+// window.alert(window.navigator.javaEnabled());
