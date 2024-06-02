@@ -6,3 +6,10 @@
 
 // window.open();
 // window.close();
+
+// window.alert("height: " + screen.height);
+// window.alert("width: " + screen.width);
+// window.alert("available height: " + screen.availHeight);
+// window.alert("available width: " + screen.availWidth);
+// window.alert("color depth: " + screen.colorDepth);
+// window.alert("pixel depth: " + screen.pixelDepth);
