@@ -36,10 +36,14 @@
 
 // document.write(Date().toLocaleString());
 
-let ele = document.getElementById("firstP");
-ele.innerText = "nihao";
+// let ele = document.getElementById("firstP");
+// ele.innerText = "nihao";
+//
+// ele.id = "P";
+// let ele2 = document.getElementById("P");
+// alert(ele2.innerText);
+// alert(ele2.id);
 
-ele.id = "P";
-let ele2 = document.getElementById("P");
-alert(ele2.innerText);
-alert(ele2.id);
+let username = document.getElementById("username");
+// username.setAttribute("value", "admin");
+username.value
