@@ -17,3 +17,19 @@
 // alert(document.baseURI);
 // alert(document.anchors["top"].innerText)
 
+// let x = document.anchors;
+// for (let i = 0;i < x.length; i++) {
+//     alert(x[i].tagName);
+// }
+
+// alert(document.doctype);
+// alert(document.documentElement.tagName);
+
+// alert(window.document.documentURI);
+// alert(document.domain);
+// alert(document.implementation);
+// alert(document.inputEncoding);
+// alert(document.lastModified)
+// alert(document.readyState);
+// alert(document.referrer);
+// alert(document.URL);
