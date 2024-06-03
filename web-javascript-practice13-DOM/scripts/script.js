@@ -33,3 +33,13 @@
 // alert(document.readyState);
 // alert(document.referrer);
 // alert(document.URL);
+
+// document.write(Date().toLocaleString());
+
+let ele = document.getElementById("firstP");
+ele.innerText = "nihao";
+
+ele.id = "P";
+let ele2 = document.getElementById("P");
+alert(ele2.innerText);
+alert(ele2.id);
