@@ -55,3 +55,21 @@
 //     });
 // });
 
+
+$(document).ready(function () {
+    $("#fadeIn").click(function () {
+        $("h1").fadeIn();
+    });
+
+    $("#fadeOut").click(function () {
+        $("h1").fadeOut();
+    });
+
+    $("#fadeToggle").click(function () {
+        $("h1").fadeToggle();
+    });
+
+    $("#fadeTo").click(function () {
+        $("h1").fadeTo(1000, 0.5);
+    });
+});
