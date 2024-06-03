@@ -44,6 +44,27 @@
 // alert(ele2.innerText);
 // alert(ele2.id);
 
-let username = document.getElementById("username");
+// let username = document.getElementById("username");
 // username.setAttribute("value", "admin");
-username.value
+// username.value
+//
+
+// $("#submitBtn").click(function() {
+//     let name = document.getElementById("name").value;
+//     alert("Hello! " + name + "!");
+// })
+// $(document).ready(function() {
+//         let ele = $('#p');
+//         ele.innerHTML = "111";
+//     }
+// );
+// $(document).ready(function() {
+//     $("#submitBtn").click(function() {
+//         let name_input = document.getElementById("name");
+//         alert(name_input.tagName);
+//         alert("Hello! "+ name_input + "!");
+    // });
+// });
+
+let ele = document.getElementById("p");
+console.log(ele.innerText);
