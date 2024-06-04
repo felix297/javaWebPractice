@@ -133,21 +133,42 @@
 //         }
 //     )
 // });
+//
+// $(document).ready(function () {
+//     // $("#getText").click(function () {
+//     //     alert($("p").text());
+//     // });
+//     //
+//     // $("#getHTML").click(function () {
+//     //     alert($("p").html());
+//     // });
+//
+//     // $("#getText").click(function () {
+//     //     alert($("#input").val());
+//     // });
+//
+//     $("#getText").click(function () {
+//         alert($("#input").attr("id"));
+//     });
+// });
+//
+// $(document).ready(function(){
+//     $("#btn").click(function () {
+//         $("#input").val(prompt("please input your name"));
+//     });
+// });
 
 $(document).ready(function () {
-    // $("#getText").click(function () {
-    //     alert($("p").text());
-    // });
-    //
-    // $("#getHTML").click(function () {
-    //     alert($("p").html());
-    // });
+    $("#btnInnerText").click(function(){
+        $("p#innerText").text(function (i, originText) {
+            return originText + prompt("what are you want to say: ");
+        });
+    });
 
-    // $("#getText").click(function () {
-    //     alert($("#input").val());
-    // });
-
-    $("#getText").click(function () {
-        alert($("#input").attr("id"));
+    $("#btnInnerHTML").click(function(){
+        $("p#innerHTML").html(function (i, originHTML) {
+            let temp = prompt("please input the html you want to add: ");
+            return originHTML + temp;
+        });
     });
 });
