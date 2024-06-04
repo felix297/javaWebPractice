@@ -7,7 +7,7 @@
     <script type="text/javascript" rel="script" src="scripts/jquery-3.7.1.min.js"></script>
 <!--    <script type="text/javascript" rel="script" src="scripts/script.js"></script>-->
 </head>
-<body>
+<body onunload="document.getElementsByTagName('title')[0].innerText = '您离开了'" onload="document.getElementsByTagName('title')[0].innerText='您回来了'">
 <!--<button id="show">show</button>-->
 <!--<button id="hide">hide</button>-->
 <!--<button id="toggle">toggle</button>-->
@@ -28,10 +28,44 @@
 <!--<button id="getText">get text</button>-->
 <!--<input id="input"/>-->
 <!--<button id="btn">input</button>-->
-<p id="innerText">this is a paragraph.</p>
-<p id="innerHTML"></p>
-<button id="btnInnerText" onclick="document.getElementById('innerText').style.color = 'green'">put inner text</button>
-<button id="btnInnerHTML">put inner html</button>
+<!--<p id="innerText">this is a paragraph.</p>-->
+<!--<p id="innerHTML"></p>-->
+<!--<button id="btnInnerText" onclick="document.getElementById('innerText').style.color = 'green'">put inner text</button>-->
+<!--<button id="btnInnerHTML">put inner html</button>-->
+<!--<p id="p1" onclick="this.innerText = 'thanks'">please click me</p>-->
+<!--<p id="p2" onclick="changeColor(this)">click me to change my color</p>-->
+<!--<p id="p3" onclick=changeColor(this)>click me to change my color</p>-->
+<!--<p id="p4" onclick=sayHello()>click me to say hello</p>-->
+<!--<p id="p5">click me to say hello, too.</p>-->
+
+<!--<script>-->
+<!--    function changeColor (ele) {-->
+<!--        ele.style.color = "red";-->
+<!--    }-->
+<!---->
+<!--    function sayHello() {-->
+<!--        alert("hello!");-->
+<!--    }-->
+<!--</script>-->
+<!--<input id="input1" onchange="upperCase(this)"/>-->
+<!---->
+<!--<script>-->
+<!--    function upperCase(ele) {-->
+<!--        ele.value = ele.value.toUpperCase()-->
+<!--    }-->
+<!--</script>-->
+
+<input id="input1" onmouseover="mouseover(this)" onmouseleave="mouseleave(this)">
+<script>
+    function mouseover(ele) {
+        ele.value = "you up";
+    }
+
+    function mouseleave(ele) {
+        ele.value = "you leave";
+    }
+</script>
+
 <script type="text/javascript" rel="script" src="scripts/script.js"></script>
 </body>
 </html>

@@ -174,3 +174,8 @@
 // });
 
 // document.getElementById("innerText").style.font = "10px consolas, sans-serif";
+document.getElementById("p5").onclick = sayHello;
+function sayHello () {
+    alert("hello!");
+}
+
