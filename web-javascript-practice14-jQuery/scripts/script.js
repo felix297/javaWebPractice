@@ -108,21 +108,28 @@
 //     });
 // });
 
-$(document).ready(function(){
-    $("#playAnime").click(function(){
-        let p = $("p");
-        p.animate({
-            height: "200px",
-        });
+// $(document).ready(function(){
+//     $("#playAnime").click(function(){
+//         let p = $("p");
+//         p.animate({
+//             height: "200px",
+//         }, function () {
+//             console.log("the animate is played 100%.");
+//         });
+//
+//         p.animate({
+//             width: "200px",
+//         });
+//     });
+//
+//     $("#stop").click(function () {
+//         $("p").stop();
+//     });
+// });
 
-        p.animate({
-            width: "200px",
-        });
-    });
-
-    $("#stop").click(function () {
-        $("p").stop();
-    });
-
-
+$(document).ready(function (){
+        $("#chaining").click(function () {
+            $("p").css("background-color","green").animate({height:"200px"}).animate({width:"100px"});
+        }
+    )
 });
