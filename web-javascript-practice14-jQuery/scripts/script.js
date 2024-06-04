@@ -74,16 +74,55 @@
 //     });
 // });
 
-$(document).ready(function() {
-    $("#slideDown").click(function () {
-        $("h1").slideDown(1000);
+// $(document).ready(function() {
+//     $("#slideDown").click(function () {
+//         $("h1").slideDown(1000);
+//     });
+//
+//     $("#slideUp").click(function () {
+//         $("h1").slideUp(1000);
+//     });
+//
+//     $("#slideToggle").click(function() {
+//         $("h1").slideToggle(1000);
+//     });
+// });
+
+// $(document).ready(function (){
+//     $("#playAnime").click(function() {
+//         $("p").animate({
+//             left: "200px",
+//             height:"toggle",
+//             width:"200px"
+//         });
+//     });
+// });
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $("p").animate({
+//             left:'250px',
+//             opacity:'0.5',
+//             height:'150px',
+//             width:'150px'
+//         });
+//     });
+// });
+
+$(document).ready(function(){
+    $("#playAnime").click(function(){
+        let p = $("p");
+        p.animate({
+            height: "200px",
+        });
+
+        p.animate({
+            width: "200px",
+        });
     });
 
-    $("#slideUp").click(function () {
-        $("h1").slideUp(1000);
+    $("#stop").click(function () {
+        $("p").stop();
     });
 
-    $("#slideToggle").click(function() {
-        $("h1").slideToggle(1000);
-    });
+
 });

@@ -1,3 +1,6 @@
-h1 {
+p {
     font: 20px consolas, sans-serif;
+    background-color: red;
+    height: 20px;
+    width: 20px;
 }
