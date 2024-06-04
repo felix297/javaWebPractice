@@ -127,9 +127,27 @@
 //     });
 // });
 
-$(document).ready(function (){
-        $("#chaining").click(function () {
-            $("p").css("background-color","green").animate({height:"200px"}).animate({width:"100px"});
-        }
-    )
+// $(document).ready(function (){
+//         $("#chaining").click(function () {
+//             $("p").css("background-color","green").animate({height:"200px"}).animate({width:"100px"});
+//         }
+//     )
+// });
+
+$(document).ready(function () {
+    // $("#getText").click(function () {
+    //     alert($("p").text());
+    // });
+    //
+    // $("#getHTML").click(function () {
+    //     alert($("p").html());
+    // });
+
+    // $("#getText").click(function () {
+    //     alert($("#input").val());
+    // });
+
+    $("#getText").click(function () {
+        alert($("#input").attr("id"));
+    });
 });
