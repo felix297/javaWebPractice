@@ -158,17 +158,19 @@
 //     });
 // });
 
-$(document).ready(function () {
-    $("#btnInnerText").click(function(){
-        $("p#innerText").text(function (i, originText) {
-            return originText + prompt("what are you want to say: ");
-        });
-    });
+// $(document).ready(function () {
+//     $("#btnInnerText").click(function(){
+//         $("p#innerText").text(function (i, originText) {
+//             return originText + prompt("what are you want to say: ");
+//         });
+//     });
+//
+//     $("#btnInnerHTML").click(function(){
+//         $("p#innerHTML").html(function (i, originHTML) {
+//             let temp = prompt("please input the html you want to add: ");
+//             return originHTML + temp;
+//         });
+//     });
+// });
 
-    $("#btnInnerHTML").click(function(){
-        $("p#innerHTML").html(function (i, originHTML) {
-            let temp = prompt("please input the html you want to add: ");
-            return originHTML + temp;
-        });
-    });
-});
+// document.getElementById("innerText").style.font = "10px consolas, sans-serif";
