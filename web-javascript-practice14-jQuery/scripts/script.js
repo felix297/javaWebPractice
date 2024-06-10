@@ -228,17 +228,33 @@
 // alert(document.getElementsByTagName("p")[0].getAttributeNode("id").nodeName)
 // alert(document.getElementsByTagName("p")[0].firstChild.nodeName)
 // alert(document.documentElement.nodeName)
+//
+// let ele_node = document.getElementsByTagName("p")[0]
+// let attr_node = document.getElementsByTagName("p")[0].getAttributeNode("id");
+// let text_node = document.getElementsByTagName("p")[0].firstChild;
+// console.log("======= node value ========");
+// console.log("value of element node: " + ele_node.nodeValue)
+// console.log("value of attribute node: " + attr_node.nodeValue)
+// console.log("value of text node: " + text_node.nodeValue)
+// console.log("======= node type ========");
+// console.log("type of element node: " + ele_node.nodeType);
+// console.log("type of attribute node: " + attr_node.nodeType);
+// console.log("type of text node: " + text_node.nodeType);
+// console.log("type of document node: " + document.documentElement.nodeType)
+// console.log('type of document: ' + document.documentElement.parent.nodeType)
 
-let ele_node = document.getElementsByTagName("p")[0]
-let attr_node = document.getElementsByTagName("p")[0].getAttributeNode("id");
-let text_node = document.getElementsByTagName("p")[0].firstChild;
-console.log("======= node value ========");
-console.log("value of element node: " + ele_node.nodeValue)
-console.log("value of attribute node: " + attr_node.nodeValue)
-console.log("value of text node: " + text_node.nodeValue)
-console.log("======= node type ========");
-console.log("type of element node: " + ele_node.nodeType);
-console.log("type of attribute node: " + attr_node.nodeType);
-console.log("type of text node: " + text_node.nodeType);
-console.log("type of document node: " + document.documentElement.nodeType)
-console.log('type of document: ' + document.documentElement.parent.nodeType)
+let p3 = document.createElement("p");
+let p3_text = document.createTextNode("the third paragraph");
+p3.appendChild(p3_text);
+
+let p2 = document.getElementsByTagName("p")[1];
+p2.addEventListener("click", function () {
+    // p2.append(new_ele);
+    // p2.parentNode.insertBefore(p3, p2);
+    // p2.remove();
+    // p2.parentNode.removeChild(p2);
+    p2.parentNode.replaceChild(p3, p2);
+});
+
+
+
