@@ -7,7 +7,7 @@
     <script type="text/javascript" rel="script" src="scripts/jquery-3.7.1.min.js"></script>
 <!--    <script type="text/javascript" rel="script" src="scripts/script.js"></script>-->
 </head>
-<body onunload="document.getElementsByTagName('title')[0].innerText = '您离开了'" onload="document.getElementsByTagName('title')[0].innerText='您回来了'">
+<body>
 <!--<button id="show">show</button>-->
 <!--<button id="hide">hide</button>-->
 <!--<button id="toggle">toggle</button>-->
@@ -55,16 +55,21 @@
 <!--    }-->
 <!--</script>-->
 
-<input id="input1" onmouseover="mouseover(this)" onmouseleave="mouseleave(this)">
-<script>
-    function mouseover(ele) {
-        ele.value = "you up";
-    }
+<!--<input id="input1" onmouseover="mouseover(this)" onmouseleave="mouseleave(this)">-->
+<!--<script>-->
+<!--    function mouseover(ele) {-->
+<!--        ele.value = "you up";-->
+<!--    }-->
+<!---->
+<!--    function mouseleave(ele) {-->
+<!--        ele.value = "you leave";-->
+<!--    }-->
+<!--</script>-->
+<!--<p id="p1"><button id="btn1">click me</button></p>-->
 
-    function mouseleave(ele) {
-        ele.value = "you leave";
-    }
-</script>
+<p id="first">The first paragraph.</p>
+<p>the second paragraph.</p>
+
 
 <script type="text/javascript" rel="script" src="scripts/script.js"></script>
 </body>

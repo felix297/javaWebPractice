@@ -174,8 +174,71 @@
 // });
 
 // document.getElementById("innerText").style.font = "10px consolas, sans-serif";
-document.getElementById("p5").onclick = sayHello;
-function sayHello () {
-    alert("hello!");
-}
+// document.getElementById("p5").onclick = sayHello;
+// function sayHello () {
+//     alert("hello!");
+// }
 
+// document.getElementById("btn1").addEventListener("click", function () {alert("you clicked me!")});
+
+// document.getElementById("btn1").addEventListener("click", function (){alert("first");});
+// document.getElementById("btn1").addEventListener("click", clickMe);
+//
+// function clickMe() {
+//     alert("second");
+// }
+
+// document.getElementById("btn1").addEventListener("mouseover", mouseOver);
+// document.getElementById("btn1").addEventListener("mouseout", mouseOut);
+// function mouseOver() {
+//     alert("mouse is over");
+// }
+//
+// function mouseOut() {
+//     alert("mouse is down");
+// }
+
+// window.addEventListener("resize", function () {
+//     document.getElementById("p1").innerText += "您改变了窗口大小";
+// });
+
+// document.getElementById("p1").addEventListener("click", clickP, false);
+// // document.getElementById("btn1").addEventListener("click", clickBtn, true);
+//
+// function clickP () {
+//     alert("you clicked a paragraph");
+// }
+//
+// function clickBtn () {
+//     alert("you clicked a button");
+// }
+
+// alert(document.getElementsByTagName("p")[0].parentNode.tagName)
+
+// alert(document.body.nodeName)
+
+// alert(document.body.innerHTML)
+// alert(document.documentElement.innerHTML)
+// alert(document.getElementsByTagName("p")[0].nextElementSibling.innerHTML)
+// alert(document.body.nodeName)
+// alert(document.documentElement.nodeName)
+// document.getElementsByTagName("p")[0].id = "first";
+// alert(document.getElementById("first").id)
+
+// alert(document.getElementsByTagName("p")[0].getAttributeNode("id").nodeName)
+// alert(document.getElementsByTagName("p")[0].firstChild.nodeName)
+// alert(document.documentElement.nodeName)
+
+let ele_node = document.getElementsByTagName("p")[0]
+let attr_node = document.getElementsByTagName("p")[0].getAttributeNode("id");
+let text_node = document.getElementsByTagName("p")[0].firstChild;
+console.log("======= node value ========");
+console.log("value of element node: " + ele_node.nodeValue)
+console.log("value of attribute node: " + attr_node.nodeValue)
+console.log("value of text node: " + text_node.nodeValue)
+console.log("======= node type ========");
+console.log("type of element node: " + ele_node.nodeType);
+console.log("type of attribute node: " + attr_node.nodeType);
+console.log("type of text node: " + text_node.nodeType);
+console.log("type of document node: " + document.documentElement.nodeType)
+console.log('type of document: ' + document.documentElement.parent.nodeType)
