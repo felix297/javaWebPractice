@@ -10,18 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec36b09-c1d1-4096-89d1-156f96d9dea8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/artifacts/web_practice12_emptyMaven_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/src/main/java/com/microsoft/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/src/main/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-practice12-emptyMaven/web-practice12-emptyMaven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/artifacts/servletMapping_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/src/main/java/com/microsoft/ServletMappingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/src/main/webapp/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/web-practice13-servletMapping.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-practice02-maven.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-practice02-maven.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-practice12-emptyMaven" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.11013216" />
     <property name="project.structure.side.proportion" value="0.1871036" />
@@ -176,6 +176,8 @@
       <workItem from="1714386464326" duration="4689000" />
       <workItem from="1718035963788" duration="374000" />
       <workItem from="1718036927039" duration="66000" />
+      <workItem from="1718076229667" duration="47000" />
+      <workItem from="1718076477800" duration="157000" />
     </task>
     <servers />
   </component>
