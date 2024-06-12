@@ -12,4 +12,13 @@
         <servlet-name>application1</servlet-name>
         <url-pattern>/application1</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>application2</servlet-name>
+        <servlet-class>com.microsoft.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>application2</servlet-name>
+        <url-pattern>/application2</url-pattern>
+    </servlet-mapping>
 </web-app>

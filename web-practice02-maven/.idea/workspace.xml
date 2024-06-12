@@ -10,8 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec36b09-c1d1-4096-89d1-156f96d9dea8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../web-practice15-responseApplication/src/main/java/com/microsoft/RedirectServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-practice15-responseApplication/src/main/webapp/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-practice13-servletMapping/src/main/java/com/microsoft/ErrorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-practice13-servletMapping/src/main/java/com/microsoft/ErrorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-practice02-maven.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-practice02-maven.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-practice02-maven/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-practice02-maven/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/.idea/artifacts/web_practice15_responseApplication_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-practice15-responseApplication/.idea/artifacts/web_practice15_responseApplication_Web_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/out/artifacts/web_practice15_responseApplication_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/out/artifacts/web_practice15_responseApplication_Web_exploded/WEB-INF/classes/com/microsoft/DownloadFilePractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/out/artifacts/web_practice15_responseApplication_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/out/artifacts/web_practice15_responseApplication_Web_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/out/artifacts/web_practice15_responseApplication_Web_exploded/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-practice15-responseApplication/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-practice15-responseApplication/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/target/classes/com/microsoft/DownloadFilePractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-practice15-responseApplication/web-practice15-responseApplication.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +184,10 @@
       <workItem from="1718076477800" duration="157000" />
       <workItem from="1718088463522" duration="26000" />
       <workItem from="1718088918781" duration="201000" />
+      <workItem from="1718193315165" duration="226000" />
+      <workItem from="1718193640949" duration="212000" />
+      <workItem from="1718195248674" duration="58000" />
+      <workItem from="1718196497490" duration="137000" />
     </task>
     <servers />
   </component>
