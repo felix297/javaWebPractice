@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web-practice14-servletContextApplication:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/web_practice14_servletContextApplication_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="web-practice14-servletContextApplication/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web-practice14-servletContextApplication" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

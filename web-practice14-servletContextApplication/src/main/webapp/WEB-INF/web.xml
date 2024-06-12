@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>felix</param-name>
+        <param-value>zeng</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>servlet-context-application</servlet-name>
+        <servlet-class>com.microsoft.ServletApplicationPractice</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-context-application</servlet-name>
+        <url-pattern>/application</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-context-application2</servlet-name>
+        <servlet-class>com.microsoft.ServletApplicationPractice2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-context-application2</servlet-name>
+        <url-pattern>/application2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>servlet-context-application3</servlet-name>
+        <servlet-class>com.microsoft.ServletApplicationPractice3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet-context-application3</servlet-name>
+        <url-pattern>/application3</url-pattern>
+    </servlet-mapping>
+</web-app>

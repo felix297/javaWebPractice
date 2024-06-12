@@ -10,7 +10,7 @@ public class ErrorServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8")
         try {
             PrintWriter out = response.getWriter();
             out.println("<html lang='en'>");
