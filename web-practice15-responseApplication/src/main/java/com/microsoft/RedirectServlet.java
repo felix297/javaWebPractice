@@ -10,7 +10,8 @@ public class RedirectServlet extends HttpServlet {
     public void doGet (HttpServletRequest request, HttpServletResponse response) {
         System.out.println("RedirectServlet");
         try {
-            response.sendRedirect("/practice15/error.html");
+            response.getWriter().println("Error");
+//            response.sendRedirect("/practice15/error.html");
         } catch (IOException e) {
             e.printStackTrace();
         }
