@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServlet;
 public class RedirectServlet extends HttpServlet {
     @Override
     public void doGet (HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("RedirectServlet");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
         try {
-            response.getWriter().println("Error");
-//            response.sendRedirect("/practice15/error.html");
+            response.getWriter().println(username + ": " + password);
         } catch (IOException e) {
             e.printStackTrace();
         }
