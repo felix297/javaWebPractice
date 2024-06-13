@@ -1,0 +1,11 @@
+h1 {
+    font: 30px Consolas, sans-serif;
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+}
