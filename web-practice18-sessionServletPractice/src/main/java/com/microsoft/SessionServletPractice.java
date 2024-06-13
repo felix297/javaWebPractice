@@ -12,7 +12,7 @@ public class SessionServletPractice extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
-        session.setMaxInactiveInterval(3);
+//        session.setMaxInactiveInterval(3);
         session.setAttribute("name", "felix'");
         try {
             PrintWriter out = response.getWriter();
