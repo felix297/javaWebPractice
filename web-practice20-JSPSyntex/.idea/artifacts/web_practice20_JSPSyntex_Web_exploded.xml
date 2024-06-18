@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="web-practice20-JSPSyntex:Web exploded">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="web-practice20-JSPSyntex/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web-practice20-JSPSyntex" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
