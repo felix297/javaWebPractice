@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    font-family: consolas, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    color: green;
+}
