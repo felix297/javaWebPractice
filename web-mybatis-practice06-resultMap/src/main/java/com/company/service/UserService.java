@@ -10,7 +10,9 @@ public class UserService {
     public User selectById(int id) {
         SqlSession sqlSession = MybatisUtil.getSqlSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-        return userMapper.selectById(id);
+        User user = userMapper.selectById(id);
+        sqlSession.close();
+        return user;
     }
 
     @Test

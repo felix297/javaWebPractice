@@ -1,0 +1,15 @@
+18:40:02 [main] DEBUG com.company.dao.UserMapper.selectById - ==>  Preparing: select * from smbms_user where id = ?;
+18:40:02 [main] DEBUG com.company.dao.UserMapper.selectById - ==> Parameters: 15(Integer)
+18:40:02 [main] TRACE com.company.dao.UserMapper.selectById - <==    Columns: id, userCode, userName, userPassword, gender, birthday, phone, address, userRole, createdBy, creationDate, modifyBy, modifyDate
+18:40:02 [main] TRACE com.company.dao.UserMapper.selectById - <==        Row: 15, zhaomin, 赵敏, 0000000, man, 1987-12-04, 18099897657, 昌平天通苑3区12号楼, 2, 1, 2015-09-12 12:02:12, null, null
+18:40:02 [main] DEBUG com.company.dao.UserMapper.selectById - <==      Total: 1
+18:41:11 [main] DEBUG com.company.dao.UserMapper.selectById - ==>  Preparing: select * from smbms_user where id = ?;
+18:41:11 [main] DEBUG com.company.dao.UserMapper.selectById - ==> Parameters: 15(Integer)
+18:41:11 [main] TRACE com.company.dao.UserMapper.selectById - <==    Columns: id, userCode, userName, userPassword, gender, birthday, phone, address, userRole, createdBy, creationDate, modifyBy, modifyDate
+18:41:11 [main] TRACE com.company.dao.UserMapper.selectById - <==        Row: 15, zhaomin, 赵敏, 0000000, man, 1987-12-04, 18099897657, 昌平天通苑3区12号楼, 2, 1, 2015-09-12 12:02:12, null, null
+18:41:11 [main] DEBUG com.company.dao.UserMapper.selectById - <==      Total: 1
+18:45:54 [main] DEBUG com.company.dao.UserMapper.selectById - ==>  Preparing: select * from smbms_user where id = ?;
+18:45:54 [main] DEBUG com.company.dao.UserMapper.selectById - ==> Parameters: 15(Integer)
+18:45:54 [main] TRACE com.company.dao.UserMapper.selectById - <==    Columns: id, userCode, userName, userPassword, gender, birthday, phone, address, userRole, createdBy, creationDate, modifyBy, modifyDate
+18:45:54 [main] TRACE com.company.dao.UserMapper.selectById - <==        Row: 15, zhaomin, 赵敏, 0000000, man, 1987-12-04, 18099897657, 昌平天通苑3区12号楼, 2, 1, 2015-09-12 12:02:12, null, null
+18:45:54 [main] DEBUG com.company.dao.UserMapper.selectById - <==      Total: 1
