@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.company.dao.StudentMapper">
+<!--    <resultMap type="com.company.pojo.Student" id="student">-->
+<!--        <association property="teacher" javaType="com.company.pojo.Teacher" column="tid" select="selectTeacher"/>-->
+<!--    </resultMap>-->
+<!--    <select id="selectStudents" resultMap="student">-->
+<!--        select * from student;-->
+<!--    </select>-->
+
+<!--    <select id="selectTeacher" parameterType="_int" resultType="com.company.pojo.Teacher">-->
+<!--        select * from teacher where id = #{tid};-->
+<!--    </select>-->
+    <resultMap id="student" type="com.company.pojo.Student">
+        <result column="sid" property="id"/>
+        <result column="sname" property="name"/>
+        <association property="teacher">
+            <result column="tid" property="id"/>
+            <result column="tname" property="name"/>
+        </association>
+    </resultMap>
+    <select id="selectStudents" resultMap="student">
+        select student.id as sid, student.name as sname, teacher.id as tid, teacher.name as tname from student, teacher where student.tid=teacher.id;
+    </select>
+</mapper>
