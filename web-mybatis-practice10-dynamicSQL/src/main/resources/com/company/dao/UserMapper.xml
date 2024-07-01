@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.company.dao.UserMapper">
+    <select id="selectUser" >
+        select * from smbms_user
+        <where>
+            <if test="rolecode != null">
+                and userRole = #{rolecode}
+            </if>
+
+            <if test="username != null">
+                userName = #{username}
+            </if>
+        </where>
+    </select>
+
+    <update id="update" parameterType="_int">
+        update smbms_user
+        <set>
+            <include refid="if"/>
+            <where>
+                id = #{id}
+            </where>
+        </set>
+    </update>
+
+    <sql id="if">
+        <if test="userName != null">
+            userName = #{userName},
+        </if>
+        <if test="userCode != null">
+            userCode = #{userCode}
+        </if>
+    </sql>
+</mapper>
+
