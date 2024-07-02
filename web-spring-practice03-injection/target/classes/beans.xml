@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="address" class="com.company.pojo.Address">-->
+<!--        <property name="address" value="Beijing"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="address" class="com.company.pojo.Address" p:address="beijing"/>-->
+
+    <bean id="address" class="com.company.pojo.Address" c:address="beijing"/>
+
+    <bean id="student" class="com.company.pojo.Student">
+        <property name="name" value="mary"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>book 1</value>
+                <value>book 2</value>
+                <value>book 3</value>
+            </array>
+        </property>
+        <property name="hobby">
+            <list>
+                <value>java</value>
+                <value>c++</value>
+                <value>python</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="home" value="123456"/>
+                <entry key="school" value="123456"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>cs:go</value>
+                <value>russia block</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null/>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">147258</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
