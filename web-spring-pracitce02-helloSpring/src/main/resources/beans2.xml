@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mysql" class="com.company.dao.MysqlImpl"/>
+    <bean id="sqlserver" class="com.company.dao.SQLServerImpl" name="server"/>
+    <bean id="service" class="com.company.service.Service">
+        <property name="database" ref="server"/>
+    </bean>
+</beans>

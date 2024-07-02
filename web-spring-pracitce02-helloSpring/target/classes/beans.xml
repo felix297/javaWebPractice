@@ -11,12 +11,8 @@
 <!--        <constructor-arg type="java.lang.String" value="Hello! Spring &#45;&#45; by parameter type"/>-->
 <!--    </bean>-->
 
-    <bean id="mysql" class="com.company.dao.MysqlImpl"/>
-    <bean id="sqlserver" class="com.company.dao.SQLServerImpl"/>
-    <bean id="service" class="com.company.service.Service">
-        <property name="database" ref="sqlserver"/>
-    </bean>
-
     <alias name="hello" alias="hello3"/>
     <bean id="hello" class="com.company.pojo.Hello" name="hello2, hello4"/>
+
+    <import resource="beans2.xml"/>
 </beans>
