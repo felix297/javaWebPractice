@@ -5,7 +5,10 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="hello" class="com.company.pojo.Hello">
-        <property name="msg" value="Hello! Spring!"/>
+<!--        <property name="msg" value="Hello! Spring!"/>-->
+<!--        <constructor-arg name="msg" value="Hello! Spring - by name"/>-->
+<!--        <constructor-arg index="0" value="Hello! Spring  &#45;&#45; by index"/>-->
+        <constructor-arg type="java.lang.String" value="Hello! Spring -- by parameter type"/>
     </bean>
 
     <bean id="mysql" class="com.company.dao.MysqlImpl"/>

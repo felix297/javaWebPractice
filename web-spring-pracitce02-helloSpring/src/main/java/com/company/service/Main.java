@@ -10,8 +10,12 @@ public class Main {
 //        Hello hello = (Hello) applicationContext.getBean("hello");
 //        System.out.println(hello.getMsg());
 
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+//        Service service = (Service)applicationContext.getBean("service");
+//        service.printMsg();
+
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
-        Service service = (Service)applicationContext.getBean("service");
-        service.printMsg();
+        Hello hello = (Hello)applicationContext.getBean("hello");
+        System.out.println(hello.getMsg());
     }
 }
