@@ -4,16 +4,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="hello" class="com.company.pojo.Hello">
+<!--    <bean id="hello" class="com.company.pojo.Hello">-->
 <!--        <property name="msg" value="Hello! Spring!"/>-->
 <!--        <constructor-arg name="msg" value="Hello! Spring - by name"/>-->
 <!--        <constructor-arg index="0" value="Hello! Spring  &#45;&#45; by index"/>-->
-        <constructor-arg type="java.lang.String" value="Hello! Spring -- by parameter type"/>
-    </bean>
+<!--        <constructor-arg type="java.lang.String" value="Hello! Spring &#45;&#45; by parameter type"/>-->
+<!--    </bean>-->
 
     <bean id="mysql" class="com.company.dao.MysqlImpl"/>
     <bean id="sqlserver" class="com.company.dao.SQLServerImpl"/>
     <bean id="service" class="com.company.service.Service">
         <property name="database" ref="sqlserver"/>
     </bean>
+
+    <alias name="hello" alias="hello3"/>
+    <bean id="hello" class="com.company.pojo.Hello" name="hello2, hello4"/>
 </beans>
