@@ -6,13 +6,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
 <!--    <bean id="address" class="com.company.pojo.Address">-->
 <!--        <property name="address" value="Beijing"/>-->
 <!--    </bean>-->
 
+    <!-- practice p-namespace -->
 <!--    <bean id="address" class="com.company.pojo.Address" p:address="beijing"/>-->
 
-    <bean id="address" class="com.company.pojo.Address" c:address="beijing"/>
+    <!-- practice c-namespace -->
+<!--    <bean id="address" class="com.company.pojo.Address" c:address="beijing"/>-->
+
+    <!-- practice singleton scope of bean -->
+<!--    <bean id="address" class="com.company.pojo.Address" scope="singleton"/>-->
+
+    <!-- practice prototype scope of bean -->
+    <bean id="address" class="com.company.pojo.Address" scope="prototype"/>
 
     <bean id="student" class="com.company.pojo.Student">
         <property name="name" value="mary"/>
