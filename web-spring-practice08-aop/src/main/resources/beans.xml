@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userMapperImpl" class="com.company.dao.UserMapperImpl"/>
+    <bean id="beforeLog" class="com.company.advisor.BeforeLog"/>
+    <bean id="afterLog" class="com.company.advisor.AfterLog"/>
+    <bean id="pointcut" class="com.company.advisor.PointCut"/>
+    <bean id="annotation" class="com.company.advisor.Annotation"/>
+
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="point-usermapper" expression="execution(* com.company.dao.UserMapper.*(..)"/>-->
+<!--        <aop:advisor advice-ref="beforeLog" pointcut-ref="point-usermapper"/>-->
+<!--        <aop:advisor advice-ref="afterLog" pointcut-ref="point-usermapper"/>-->
+<!--    </aop:config>-->
+
+<!--    <aop:config>-->
+<!--        <aop:aspect ref="pointcut">-->
+<!--            <aop:pointcut id="point-usermapper" expression="execution(* com.company.dao.UserMapper.*(..))"/>-->
+<!--            <aop:after method="before" pointcut-ref="point-usermapper"/>-->
+<!--            <aop:before method="after" pointcut-ref="point-usermapper"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+    <aop:aspectj-autoproxy/>
+</beans>
