@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 //@Scope("singleton")
 //@Scope("prototype")
 public class Cat {

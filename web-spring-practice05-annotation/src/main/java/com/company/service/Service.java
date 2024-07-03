@@ -9,6 +9,6 @@ public class Service {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         Cat cat1 = applicationContext.getBean("cat", Cat.class);
         Cat cat2 = applicationContext.getBean("cat", Cat.class);
-        System.out.println(cat1.hashCode() == cat2.hashCode());
+        System.out.println(cat1.toString());
     }
 }
